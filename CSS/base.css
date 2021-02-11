@@ -56,19 +56,15 @@
 :root {
   --bg-primary:                  #F4F3F5; /* [1] */
   --bg-secondary:                #FFFFFF;
-  --bg-thirdly:                  #F4F3F5;
+  --bg-thirdly:                  #B2ACBA;
 
   --bg-header:                   #6200EA;
-  --bg-footer:                   #211138;
+
+  --header-font-color:           #FFFFFF;
 
   --primary-font-color:          #211138;
   --secondary-font-color:        #6200EA;
   --thirdly-font-color:          #FFFFFF;
-
-  --header-font-color:           #F4F3F5;
-  
-  --footer-primary-font-color:   #B2ACBA;
-  --footer-secondary-font-color: #6200EA;
 }
 
 
@@ -91,9 +87,7 @@
 
 html { font-size: 10px; } /* [3] */
 
-h2 { font-size: 4rem; }
-
-h6 { font-size: 1.2rem; }
+h3 { font-size: 1.2rem; }
 
 p  { font-size: 1.4rem; }
 
@@ -105,16 +99,7 @@ p  { font-size: 1.4rem; }
   #MARGINS
 \*------------------------------------*/
 
-h2, 
-h6                          { margin: 0 0 1rem 0; } /* [4] */
-
-p                           { margin: 0 0 2rem 0; }
-
-.contact-info__map,
-.contact-info__address,
-.contact-info__phone-email  { margin-bottom: 3rem; }
-
-p.footer__copyright         { margin: 0; }
+h3 { margin: 0 0 .5rem 0; } /* [4] */
 
 
 
@@ -140,22 +125,12 @@ a {
 body {
   font-family:      "Montserrat", sans-serif;
   color:            var(--primary-font-color);
-  background-color: var(--bg-primary);
+  background-color: var(--bg-secondary);
 }
 
-h2 {
+h3 {
   font-weight:      bold;
-  line-height:      5rem;
-  letter-spacing:   0;
-}
-
-h6 {
-  font-weight:      bold;
+  line-height:      1.5rem;
   letter-spacing:   .24rem;
   text-transform:   uppercase;
-}
-
-p {
-  line-height:      2rem;
-  letter-spacing:   0;
 }
