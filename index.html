@@ -4,9 +4,200 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <meta name="Chat app interface" content="description">
+  <title>Chat app interface</title>
+
+  <link rel="stylesheet" href="css/normalize.min.css">
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+  <link rel="stylesheet" href="css/components.css">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+
+  <script src="https://kit.fontawesome.com/c300050d94.js" crossorigin="anonymous"></script>
 </head>
+
+
+
 <body>
-    
+   
+  <section class="left">
+
+    <div class="search-box">
+      search
+    </div>
+
+    <div class="contacts-list">
+
+      <div class="contact-container">
+        <a href="#" class="contact">
+          <div class="contact__avatar">
+            <img src="" alt="" class="avatar">
+          </div>
+          <div class="contact__body">
+            <h3 class="contact__name">Amy Adams</h3>
+            <p class="contact__status">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact-container">
+        <a href="#" class="contact">
+          <div class="contact__avatar">
+            <img src="" alt="" class="avatar">
+          </div>
+          <div class="contact__body">
+            <h3 class="contact__name">Marc</h3>
+            <p class="contact__status">Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact-container">
+        <a href="#" class="contact">
+          <div class="contact__avatar">
+            <img src="" alt="" class="avatar">
+          </div>
+          <div class="contact__body">
+            <h3 class="contact__name">Jacob</h3>
+            <p class="contact__status"></p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact-container">
+        <a href="#" class="contact">
+          <div class="contact__avatar">
+            <img src="" alt="" class="avatar">
+          </div>
+          <div class="contact__body">
+            <h3 class="contact__name">Chris Smith</h3>
+            <p class="contact__status">At vero eos et accusam et justo duo dolores et ea rebum.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact-container">
+        <a href="#" class="contact">
+          <div class="contact__avatar">
+            <img src="" alt="" class="avatar">
+          </div>
+          <div class="contact__body">
+            <h3 class="contact__name">Mia Wong</h3>
+            <p class="contact__status">Stet clita kasd gubergren.</p>
+          </div>
+        </a>
+      </div>
+
+      <div class="contact-container">
+        <a href="#" class="contact">
+          <div class="contact__avatar">
+            <img src="" alt="" class="avatar">
+          </div>
+          <div class="contact__body">
+            <h3 class="contact__name">Jane</h3>
+            <p class="contact__status">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+          </div>
+        </a>
+      </div>
+
+    </div>
+
+    <a href="#" class="btn">Add new contact</a>
+
+  </section>
+
+  <section class="right">
+
+    <header class="header">
+
+      <div class="header-content">
+        <div class="header__contact-name">
+          <a href="#" class="contact-name">Amy Adams</a>
+        </div>
+        <div class="header__logo">
+          <img src="assets/logo_50.svg" alt="logo image" class="logo">
+        </div>
+        <div class="header__student">
+          <div class="header__student__name">
+            <a href="#" class="student-name">Student name</a>
+          </div>
+          <div class="header_student__avatar">
+            <a href="#" class="">
+              <img src="assets/user_avatars/user_avatar_07.png" alt="student avatar" class="avatar">
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </header>
+
+    <section class="chat">
+      
+      <div class="chat__line">
+        <div class="chat__line__avatar-container">
+          <img src="assets/user_avatars/user_avatar_01.png" alt="" class="avatar">
+        </div>
+        <div class="chat__line__bubbles">
+          <div class="bubble sender-bubble">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</div>
+          <div class="bubble sender-bubble">At vero eos et accusam et justo duo dolores et ea rebum.</div>
+        </div>
+      </div>
+
+      <div class="chat__line">
+        <div class="chat__line__bubbles">
+          <div class="bubble owner-bubble">Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</div>
+        </div>
+        <div class="chat__line__avatar-container">
+          <img src="assets/user_avatars/user_avatar_07.png" alt="" class="avatar">
+        </div>
+      </div>
+
+      <div class="chat__line">
+        <div class="chat__line__bubbles">
+          <div class="bubble owner-bubble">At vero eos et accusam et justo duo dolores et ea rebum.</div>
+          <div class="bubble owner-bubble">Stet clita kasd gubergren.</div>
+        </div>
+        <div class="chat__line__avatar-container">
+          <img src="assets/user_avatars/user_avatar_07.png" alt="" class="avatar">
+        </div>
+      </div>
+
+      <div class="chat__line">
+        <div class="chat__line__avatar-container">
+          <img src="assets/user_avatars/user_avatar_01.png" alt="" class="avatar">
+        </div>
+        <div class="chat__line__bubbles">
+          <div class="bubble sender-bubble">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat.</div>
+        </div>
+      </div>
+
+      <div class="typing">Amy is typing...</div>
+
+    </section>
+
+    <section class="compose">
+      <div class="compose__box">
+        <textarea name="message" id="message" cols="30" rows="10" class="compose__box__textarea" placeholder="Type your message ..."></textarea>
+      </div>
+      <div class="send-btn-container">
+        <a href="#" class="send-btn">
+          <div class="icon-container">
+            send icon
+          </div>
+        </a>
+      </div>
+    </section>
+
+  </section>
+
+  <footer class="footer">
+    <p class="footer__copyright">
+      © 2020 COPYRIGHT 
+      <span class="footer__brand-name">brand name</span>
+       / design by 
+       <span class="footer__student-name">student name</span>
+    </p>
+  </footer>
 </body>
 </html>
