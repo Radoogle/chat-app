@@ -145,16 +145,35 @@ div.selected {
   border-left:    .3rem solid transparent; 
   height:         8rem;
   padding:        1.5rem;
-  
-  /* width: 100%; */
+}
+
+
+.left {
+  min-width: 0; /* need this in order for the 
+                    white-space: nowrap; to work on the children */
 }
 
 .contact__status,
 .contact__name {
-  /* white-space:    nowrap; */
+  white-space:    nowrap; /* the parent must have min-width: 0; */
   overflow:       hidden;
   text-overflow:  ellipsis;
 }
+
+  .contact__name {
+    font-size:      1.2rem;
+    font-weight:    bold;
+    letter-spacing: .24rem;
+    line-height:    1.5rem;
+    text-transform: uppercase;
+    color:          var(--secondary-font-color);
+  }
+
+  .contact__status {
+    font-size:      1.4rem;
+    line-height:    2rem;
+    color:          var(--primary-font-color);
+  }
 
 .avatar-left {
   float:        left;
@@ -165,11 +184,11 @@ div.selected {
   float:        right;
 }
 
-/* .clearfix::after {
+.clearfix::after {
   content:  "";
   display:  table;
   clear:    both;
-} */
+}
 
 
 /*------------------------------------*\
