@@ -23,12 +23,17 @@
 
 
 
-img.avatar {
+.avatar {
   display: inline-block;
   width: 5rem;
   height: 5rem;
   border-radius: 50%;
   object-fit: cover;
+}
+
+.avatar40 {
+  width:  4rem;
+  height: 4rem;
 }
 
 /*------------------------------------*\
@@ -38,38 +43,35 @@ img.avatar {
  .header {
   background-color: #6200EA;
   height:           8rem;
+  padding:          0 3rem;
 }
 
+  .header__content {
+    height: 100%;
+    align-items: center;
+  }
 
+.contact-name {
+  font-size:    2rem;
+  font-weight:  bold;
+  line-height:  3rem;
+  color:        var(--thirdly-font-color);
+}
 
+.header__student__name {
+  display:      grid;
+  place-items:  center;
+  margin-right: 2rem;
+}
 
-
-/*------------------------------------*\
-  #NAVIGATION
-\*------------------------------------*/
-
- .nav__link {
-  color:          var(--header-font-color);
-  opacity:        65%;
-  text-transform: uppercase;
+.student-name {
   font-size:      1.2rem;
-  line-height:    1.5rem;
   font-weight:    bold;
+  line-height:    1.5rem;
   letter-spacing: .24rem;
-  display:        inline-block;
-  border-bottom:  4px solid transparent;
-  padding-top:    3.05rem;
-  transition:     all .3s ease-in-out;
+  color:          var(--thirdly-font-color);
+  text-transform: uppercase;
 }
-
-.nav__link:hover {
-  color:                var(--header-font-color);
-  opacity:              100%;
-  border-bottom-color:  var(--header-font-color);
-}
-
-
-
 
 
 /*------------------------------------*\
@@ -78,121 +80,7 @@ img.avatar {
 
 .main { background-color: #F4F3F5; }
 
-.contact-info,
-.contact-form {
-  background-color: #fff;
-  border-radius:    1.5rem;
-  overflow:         auto;
-  padding:          6rem;
-}
-
-  .contact-info__map {
-    border-radius:  1.5rem;
-    width:          100%;
-    height:         28rem;
-  }
-
-  .contact-info__heading { color: var(--secondary-font-color); }
-
-  .contact-form__text {
-    font-size:    2rem;
-    line-height:  3rem;
-  }
-
-  .contact-form__title::first-letter { text-transform: uppercase; }
-
-  .contact-info__link {
-    display:        block;
-    font-size:      1.2rem;
-    font-weight:    bold;
-    line-height:    1.5rem;
-    letter-spacing: .24rem;
-    text-transform: uppercase;
-    margin:         1rem 0 0 0;
-    color:          var(--secondary-font-color);
-  }
-
-  .contact-info__social-media-link {
-    font-size:        2rem;
-    display:          inline-block;
-    color:            var(--thirdly-font-color);
-    background-color: var(--secondary-font-color);
-    border-radius:    50%;
-    width:            4rem;
-    height:           4rem;
-    line-height:      4rem;
-    text-align:       center;
-    margin-right:     1rem;
-  }
-
-  .contact-form__input-field {
-    font-size:        1.4rem;
-    line-height:      1.8rem;
-    width:            100%;
-    height:           5rem;
-    color:            var(--primary-font-color);
-    background-color: var(--bg-primary);
-    border:           0;
-    border-bottom:    .3rem solid transparent;
-    padding:          1.6rem 0 1.6rem 2.4rem;
-    margin-bottom:    1.5rem;
-    outline:          none;
-  }
-
-    .contact-form__input-field:focus { border-bottom-color: var(--secondary-font-color); }
-
-    .contact-form__input-field::placeholder {
-      font-weight:    bold;
-      opacity:        .25;
-    }
-
-    .contact-form__input-field--textarea {
-      height:         15rem;
-      display:        block;
-      margin-bottom:  2rem;
-    }
-
-  .contact-form__submit {
-    width:              100%;
-    height:             5rem;
-    background-color:   var(--secondary-font-color);
-    border:             .2rem solid var(--secondary-font-color);
-    border-radius:      2.4rem;
-    color:              var(--thirdly-font-color);
-    font-size:          1.2rem;
-    font-weight:        bold;
-    line-height:        1.5rem;
-    letter-spacing:     .24rem;
-    text-transform:     uppercase;
-    text-align:         center;
-    vertical-align:     middle;
-  }
 
 
 
 
-
-/*------------------------------------*\
-  #FOOTER
-\*------------------------------------*/
-
-.footer {
-  background-color: var(--bg-footer);
-  height:           10rem;
-  justify-content:  center;
-  align-items:      center; 
-}
-
-  .footer__copyright {
-    font-size:        1.2rem;
-    line-height:      1.5rem;
-    letter-spacing:   .24rem;
-    text-transform:   uppercase;
-    font-weight:      bold;
-    color:            var(--footer-primary-font-color);
-  }
-
-  .footer__brand-name,
-  .footer__student-name {
-    color: var(--footer-secondary-font-color);
-  }
