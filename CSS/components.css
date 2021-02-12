@@ -51,12 +51,12 @@
     align-items: center;
   }
 
-.contact-name {
-  font-size:    2rem;
-  font-weight:  bold;
-  line-height:  3rem;
-  color:        var(--thirdly-font-color);
-}
+    .contact-name {
+      font-size:    2rem;
+      font-weight:  bold;
+      line-height:  3rem;
+      color:        var(--thirdly-font-color);
+    }
 
 .header__student__name {
   display:      grid;
@@ -64,14 +64,79 @@
   margin-right: 2rem;
 }
 
-.student-name {
-  font-size:      1.2rem;
-  font-weight:    bold;
-  line-height:    1.5rem;
-  letter-spacing: .24rem;
-  color:          var(--thirdly-font-color);
-  text-transform: uppercase;
+  .student-name {
+    font-size:      1.2rem;
+    font-weight:    bold;
+    line-height:    1.5rem;
+    letter-spacing: .24rem;
+    color:          var(--thirdly-font-color);
+    text-transform: uppercase;
+  }
+
+
+
+
+
+/*------------------------------------*\
+  #ASIDE LIST
+\*------------------------------------*/
+
+.search-box-wrapper {
+  height:           8rem;
+  width:            100%;
+  background-color: var(--bg-secondary);
+  padding:          1.5rem;
 }
+
+.search-box {
+  width:  100%;
+  height: 100%;
+}
+
+.search-form {
+  width:    100%;
+  height:   100%;
+}
+
+.search-input,
+.search-submit {
+  height:           100%;
+  outline:          none;
+  border:           none;
+  background-color: var(--bg-primary);
+}
+
+.search-input   { width: 80%; }
+
+.search-submit  { 
+  position: relative;
+  left:     -.3rem;
+  top:      .4rem;
+  width:    18%; 
+}
+
+.search-input {
+  font-size:      1.4rem;
+  line-height:    1.8rem;
+  padding-left:   2.4rem;
+  border-bottom:  3px solid transparent;
+}
+
+.search-input:focus { border-bottom-color: var(--secondary-font-color); }
+
+.search-input::placeholder,
+.icon {
+  font-weight:  bold;
+  opacity:      .25;
+}
+
+.icon {
+  font-size:    2rem;
+  line-height:  2rem;
+}
+
+
+
 
 
 /*------------------------------------*\
