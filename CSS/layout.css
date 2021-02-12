@@ -36,6 +36,16 @@ body {
 
 .header__logo             { align-self: center; }
 
+.float-left   { float: left; }
+
+.float-right  { float: right; }
+
+.float-left::after,
+.float-right::after {
+  content:  "";
+  display:  table;
+  clear:    both;
+}
 
 .right { 
   position: relative;
