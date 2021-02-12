@@ -81,11 +81,16 @@
   #ASIDE LIST
 \*------------------------------------*/
 
+div.selected {
+  border-left-color: var(--bg-header);
+}
+
 .search-box-wrapper {
   height:           8rem;
   width:            100%;
   background-color: var(--bg-secondary);
   padding:          1.5rem;
+  border-bottom:    .1rem solid var(--bg-primary);
 }
 
 .search-box {
@@ -135,8 +140,36 @@
   line-height:  2rem;
 }
 
+.contact-container {
+  border-bottom:  .1rem solid var(--bg-primary);
+  border-left:    .3rem solid transparent; 
+  height:         8rem;
+  padding:        1.5rem;
+  
+  /* width: 100%; */
+}
 
+.contact__status,
+.contact__name {
+  /* white-space:    nowrap; */
+  overflow:       hidden;
+  text-overflow:  ellipsis;
+}
 
+.avatar-left {
+  float:        left;
+  margin-right: 1.5rem;
+}
+
+.avatar-right {
+  float:        right;
+}
+
+/* .clearfix::after {
+  content:  "";
+  display:  table;
+  clear:    both;
+} */
 
 
 /*------------------------------------*\
