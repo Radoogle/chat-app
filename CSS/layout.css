@@ -32,6 +32,16 @@ body {
 
 .flex-row                 { flex-direction: row; }
 
+.flex-reverse             { 
+  /* flex-direction: row-reverse; */
+  align-items: flex-end;
+  justify-content: flex-end;
+ }
+
+ .chat__line__content {
+   /* align-self: right; */
+ }
+
 .header__content          { justify-content: space-between; }
 
 .header__logo             { align-self: center; }
