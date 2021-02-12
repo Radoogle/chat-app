@@ -149,7 +149,7 @@ div.selected {
 
 
 .left {
-  min-width: 0; /* need this in order for the 
+  min-width: 10rem; /* need this in order for the 
                     white-space: nowrap; to work on the children */
 }
 
@@ -191,13 +191,57 @@ div.selected {
 }
 
 
+
+
+/*------------------------------------*\
+  #BUTTONS
+\*------------------------------------*/
+
+.btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1.5rem;
+  height: 5rem;
+  border: .2rem solid var(--secondary-font-color);
+  color: var(--secondary-font-color);
+  border-radius: 2.4rem;
+  text-transform: uppercase;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+  font-weight: bold;
+  letter-spacing: .24rem;
+}
+
+
+
+
 /*------------------------------------*\
   #MAIN CONTENT
 \*------------------------------------*/
 
 .main { background-color: #F4F3F5; }
 
+.right { background-color: var(--bg-primary); }
 
+.chat {
+  padding: 4rem 6rem 6.5rem 6rem;
+  height: 100%;
+  overflow-y: scroll;
+  /* scrollbar-width:    none; */
+}
+
+.chat::-webkit-scrollbar { display: none; } /* hide the scrollbar in chrome */
+
+.compose {
+  background-color: var(--bg-secondary);
+  padding: 2rem 12rem 2rem 2rem;
+  border-left: .1rem solid var(--bg-primary);
+}
+
+.compose__box {
+  background-color: var(--bg-primary);
+}
 
 
 
