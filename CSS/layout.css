@@ -31,15 +31,18 @@ body {
 .flex-container           { display: flex; }
 
 .flex-row                 { flex-direction: row; }
+.flex-col                 { flex-direction: column; }
 
-.flex-reverse             { 
-  /* flex-direction: row-reverse; */
+.flex-end {
   align-items: flex-end;
   justify-content: flex-end;
  }
 
- .chat__line__content {
-   /* align-self: right; */
+ .owner-bubble,
+ .chat__line__bubbles {
+  justify-content: flex-end;
+  align-self: flex-end;
+  align-items: flex-end;
  }
 
 .header__content          { justify-content: space-between; }
