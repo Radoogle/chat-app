@@ -38,8 +38,11 @@ body {
   justify-content: flex-end;
  }
 
- .owner-bubble,
- .chat__line__bubbles {
+ .flex-start {
+   align-items: flex-start;
+ }
+
+ .owner-bubble {
   justify-content: flex-end;
   align-self: flex-end;
   align-items: flex-end;

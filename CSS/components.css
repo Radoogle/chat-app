@@ -235,7 +235,9 @@ div.selected {
   /* scrollbar-width:    none; */
 }
 
-.chat::-webkit-scrollbar { display: none; } /* hide the scrollbar in chrome */
+.chat__line__content      { width: 100%; }
+
+.chat::-webkit-scrollbar  { display: none; } /* hide the scrollbar in chrome */
 
 .timestamp,
 .chat__typing {
